@@ -1,5 +1,5 @@
 
-@media screen and (min-width: 250px){
+@media screen and (min-width: 200px){
   .col-half{
     width:50% !important;
   }
@@ -11,6 +11,10 @@ img{
 
 h5{
   font-size: 1em;
+}
+
+h4{
+  font-size: 1.5em !important;
 }
 
 .profileimg{
@@ -78,10 +82,19 @@ h5{
 }
 
 .joblistingheader h5, .joblistingheader p{
-  display: inline-block;
+  display: block;
   margin-bottom:0;
-  margin-left:1em;
+  margin-left:6%;
 }
+
+.joblistingheader div{
+  flex: 1 1 80%;
+}
+
+.joblistingheader a{
+  flex:0 1 auto;
+}
+
 .joblistingheader p, .jobcard p{
   color: #96999bfc;
   font-size: 0.7em;
@@ -251,7 +264,16 @@ footer div.active img{
 }
 
 .rightcontent{
-  height: 100% !important;
-    width: 100% !important;
+  flex: 0 1 50%;
     text-align: center;
+}
+.rightcontent img{
+  height: 100%;
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+}
+.leftcontent{
+  max-width: 50%;
+    flex: 1 0 50%;
 }

@@ -29,4 +29,5 @@ flex: 0 0 auto;
     text-transform: uppercase;
     font-size: 0.8em !important;
     border: 1px solid #80808029;
+    display: inline-block;
 `;
