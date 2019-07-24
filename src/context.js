@@ -10,6 +10,11 @@ class ProductProvider extends React.Component{
         jobcategories:jobcategories,
         userdetails:userdetails
     }
+    componentDidMount(){
+        fetch('https://jobs.github.com/positions.json?lat=37.3229978&long=-122.0321823',{mode:'no-cors'}).then(function(result){
+            console.log(result);
+        })
+    }
     render(){
         return(
         <ProductContext.Provider value={{...this.state}}>{this.props.children}</ProductContext.Provider>

@@ -19,7 +19,7 @@ export default class Userdetails extends React.Component{
                                         <p className="userdata">{userdata.education}&nbsp;&nbsp;|&nbsp;&nbsp;{userdata.experience}</p>
                                     </div>
                                     <div className="col-half col-sm-6">
-                                        <img src={imgsrc} className="profileimg"></img>
+                                        <img src={imgsrc} className="profileimg" alt="Profile"></img>
                                     </div>
                                     </div>
                                 );

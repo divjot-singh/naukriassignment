@@ -12,7 +12,7 @@ export default function Whatsappalert (){
                 </Whatsappcard>
             </div>
             <div className="rightcontent">
-                <img src="assets/whatsapp.png" height="100" width="100" />
+                <img src="assets/whatsapp.png" height="100" width="100" alt="Whatsapp Icon" />
             </div>
             
         </div>

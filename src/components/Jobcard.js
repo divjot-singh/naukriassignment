@@ -11,7 +11,7 @@ export default class Jobcard extends React.Component{
                         <p>{job.company}</p>
                     </div>
                     <div className="jobphotocontainer">
-                        <img src="assets/companylogo.png" height="40" width="40"></img>
+                        <img src="assets/companylogo.png" height="40" width="40" alt="Company Logo"></img>
                     </div>
                 </div>
                 <div className="jobdetail">
