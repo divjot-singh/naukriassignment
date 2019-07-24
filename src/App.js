@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import UserDetails from './components/Userdetails';
+import JobListing from './components/Joblisting';
+import Jobcategories from './components/Jobcategories';
+import Whatsappalert from './components/Whatsappalert';
+import JobCityListing from './components/JobCityListing';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <UserDetails />
+      <JobListing jobtype="location" />
+      <Jobcategories showcount={true}  />
+      <JobListing jobtype="preference" />
+      <Whatsappalert />
+      <JobCityListing />
+    </React.Fragment>
   );
 }
 

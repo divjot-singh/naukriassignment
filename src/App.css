@@ -1,33 +1,208 @@
-.App {
-  text-align: center;
+
+@media screen and (min-width: 250px){
+  .col-half{
+    width:50% !important;
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+img{
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profileimg{
+  display: block;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  float: right;
+  border: 0.08em solid white;
+}
+.userdetails{
+  padding: 25px 5px 2px;
+  background: #209090;
+}
+
+.userdetails p{
+  color:white;
+}
+
+.userdetails p.username{
+  font-size: 1.4em;
+  margin-bottom: 0.5em;
+}
+.userdetails p.userdata{
+  font-size:0.8em;
+  color:#f5f4f4;
+}
+
+.userdetails .left-col{
+  margin-top: 1rem;
+}
+
+.searchbox{
+  margin: 0 15px;
+  height: calc(2.5em + .75rem + 2px) !important; 
+}
+
+.searchbox::placeholder{
+  color:grey !important;
+  opacity: 0.5 !important;
+}
+
+.searchbox-container i{
+  position: absolute;
+    right: 0px;
+    font-size: 1rem;
+    margin: 1.2rem .75rem 0 0;
+    padding-right: 15px;
+    color: grey;
+    opacity: 0.7;
+}
+.searchbox-container{
+  position: relative;
+}
+
+
+.joblisting, .citylisting{
+  margin:5px 0;
+  padding: 25px 15px 2px;
+}
+
+.joblistingheader{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.joblistingheader h5, .joblistingheader p{
+  display: inline-block;
+  margin-bottom:0;
+  margin-left:1rem;
+}
+.joblistingheader p, .jobcard p{
+  color: #96999bfc;
+  font-size: 0.7em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.color-cyan{
+  color: #209090;
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.joblist{
+  margin-top:1em;
+}
+
+.jobcard{
+  border: 1px solid #dee2e6;
+  box-shadow: -1px 2px #cbcfd480;
+  border-radius: 1.5%;
+  padding: 1em 1em 0;
+  width: 95%;
+  flex: 0 0 auto;
+  margin-right: 0.5em;
+}
+.jobheader{
+  display: flex;
+}
+
+.jobheaderleft{
+  flex:1 1 auto;
+}
+
+.jobphotocontainer{
+  flex: 0 1 auto;
+}
+
+.jobcard h5, .jobcategorylisting h5{
+  font-size: 1rem;
+}
+
+.jobcard img{
+  border-radius:10%;
+}
+
+.jobdetail p{
+  font-size: 0.8em;
+}
+
+.jobdetail p i{
+  margin-right: 1em;
+  color: #6f7477fc;
+}
+.jobtimestamp{
+  float: right;
+  margin-bottom: 0.5em;
+}
+
+.joblist{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+
+.jobcategorylisting{
+  background: #ffa500b0;
+  margin-top:20px;
+}
+
+.jobcategorylisting h5{
+  padding: 1em 0 0.8px 1em;
+}
+
+.categorycardlisting{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin-top: 1.5em;
+  padding: 0 0 1em 1.5em;
+}
+
+.jobcategory .categorycardlisting{
+  padding-bottom: 0.2em;
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+.whatsappalert{
+  margin: 1em 1.8em 1em 1em;
+    padding: 1em 1.5em 1.2em;
+    border: 1px solid #43494f;
+    box-shadow: -1px 2px #cbcfd480;
+    border-radius: 1.5%;
+    display: flex;
+    align-items: center;
+}
+
+.whatsappalert h5{
+  text-shadow: 0px 0px 1px #2d2727;
+}
+
+
+.whatsappalert p{
+  color: #96999bfc;
+    font-size: 1.1em;
+    text-shadow: 0px 0px 1px #7b8082fc;
+}
+
+
+.joblist .listcontainer{
+  flex:0 0 auto;
+  margin-right: 1em;
+}
+
+.listcontainer img{
+  border-radius: 7%;
+}
+.listcontainer .cityname{ 
+  margin-top: 0.7em;
+  margin-bottom: 0;
+  text-shadow: 1px 0px 1px #131313d6;
+}
+.listcontainer .cityjobcount{
+  margin-bottom: 0;
+  color: grey;
+  font-size: 0.7em;
 }
