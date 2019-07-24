@@ -5,6 +5,16 @@
   }
 }
 
+@media screen and (min-width: 500px){
+  .jobcard{
+    width: 400px !important;
+  }
+  .whatsappalert{
+    width: 400px !important;
+    margin: 0 auto !important;
+  }
+}
+
 img{
   display: inline-block;
 }
@@ -232,6 +242,7 @@ footer{
   box-shadow: 0px 2px 0px 7px #8080804d;
   border-radius: 3% 3% 0 0;
   text-transform: uppercase;
+  height: 4rem;
 }
 
 footer div{
