@@ -9,6 +9,10 @@ img{
   display: inline-block;
 }
 
+h5{
+  font-size: 1em;
+}
+
 .profileimg{
   display: block;
   border-radius: 50%;
@@ -36,7 +40,7 @@ img{
 }
 
 .userdetails .left-col{
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .searchbox{
@@ -52,8 +56,8 @@ img{
 .searchbox-container i{
   position: absolute;
     right: 0px;
-    font-size: 1rem;
-    margin: 1.2rem .75rem 0 0;
+    font-size: 1em;
+    margin: 1.2em .75em 0 0;
     padding-right: 15px;
     color: grey;
     opacity: 0.7;
@@ -76,7 +80,7 @@ img{
 .joblistingheader h5, .joblistingheader p{
   display: inline-block;
   margin-bottom:0;
-  margin-left:1rem;
+  margin-left:1em;
 }
 .joblistingheader p, .jobcard p{
   color: #96999bfc;
@@ -116,7 +120,7 @@ img{
 }
 
 .jobcard h5, .jobcategorylisting h5{
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 .jobcard img{
@@ -205,4 +209,49 @@ img{
   margin-bottom: 0;
   color: grey;
   font-size: 0.7em;
+}
+
+footer{
+  display: flex !important;
+  padding: 2% 10%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 2px 0px 7px #8080804d;
+  border-radius: 3% 3% 0 0;
+  text-transform: uppercase;
+}
+
+footer div{
+  flex: 0 0 33%;
+    max-width: 33%;
+    margin: 0 5%;
+    text-align: center;
+    cursor: pointer;
+}
+
+footer div img{
+  opacity:0.5;
+}
+
+footer div p{
+  margin-top: 0.5em;
+  margin-bottom: 0;
+  font-size: 0.7em;
+  text-shadow: 0 0 1px #a09595;
+  color: #808080ab;
+  
+}
+footer div.active p{
+  text-shadow: 0 0 1px #393535 !important;
+  color: black !important;
+}
+
+footer div.active img{
+  opacity: 1 !important;
+}
+
+.rightcontent{
+  height: 100% !important;
+    width: 100% !important;
+    text-align: center;
 }

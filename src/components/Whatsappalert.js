@@ -19,7 +19,7 @@ export default function Whatsappalert (){
     );
 }
 
-const Whatsappcard = styled.p`
+const Whatsappcard = styled.span`
 flex: 0 0 auto;
     border-radius: 2em;
     padding: 0.5em 1em;
@@ -27,6 +27,6 @@ flex: 0 0 auto;
     color: white !important;
     background: #209090;
     text-transform: uppercase;
-    font-size: smaller !important;
+    font-size: 0.8em !important;
     border: 1px solid #80808029;
 `;

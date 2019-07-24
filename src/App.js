@@ -6,6 +6,7 @@ import JobListing from './components/Joblisting';
 import Jobcategories from './components/Jobcategories';
 import Whatsappalert from './components/Whatsappalert';
 import JobCityListing from './components/JobCityListing';
+import Footer from './components/Footer';
 function App() {
   return (
     <React.Fragment>
@@ -15,6 +16,7 @@ function App() {
       <JobListing jobtype="preference" />
       <Whatsappalert />
       <JobCityListing />
+      <Footer />
     </React.Fragment>
   );
 }
