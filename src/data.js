@@ -143,7 +143,7 @@ const userdetails=
 		"name":"Rishabh Singh",
 		"education":"12th Pass",
 		"experience":"Fresher",
-		"photo":"profile.jpg"
+		"photo":"profileimg.jpg"
 	}
 
 
