@@ -5,15 +5,47 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends React.Component{
     state={
-        jobdata:jobdata,
-        joblocation:joblocation,
-        jobcategories:jobcategories,
-        userdetails:userdetails
+        jobdata:[],
+        joblocation:{},
+        jobcategories:[],
+        userdetails:{}
+    }
+    setStateUsingApi(){
+        const that=this;
+        fetch('assets/data.json').then(function(result){
+            result.json()
+            .then((data) => {
+                that.setState( () => {
+                    return {
+                        jobdata:[...data,...jobdata],
+                        joblocation:joblocation,
+                        jobcategories:jobcategories,
+                        userdetails:userdetails
+                    }
+
+                })
+            }).catch( err => {
+                that.setStateUsingData();
+            })
+        }).catch(err => {
+            that.setStateUsingData();
+        })
+    }
+
+    setStateUsingData(){
+        this.setState( () =>{
+            return {
+                jobdata:jobdata,
+                joblocation:joblocation,
+                jobcategories:jobcategories,
+                userdetails:userdetails
+            }
+        } );
     }
     componentDidMount(){
-        fetch('https://jobs.github.com/positions.json?lat=37.3229978&long=-122.0321823',{mode:'no-cors'}).then(function(result){
-            console.log(result);
-        })
+        this.setStateUsingData.bind(this);
+        this.setStateUsingApi.bind(this);
+        this.setStateUsingApi();
     }
     render(){
         return(
